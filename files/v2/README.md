@@ -851,33 +851,33 @@ If you wish to ensure that the vbs program does not attempt to access the intern
 Note that the webite the vbs and this README file are referring to is the official python website.
 
 DrWeb:
-    * Scan result: [install_pip.vbs - Ok](https://online273.drweb.com/cache/?i=1ff451ce0a706304955efeb7364e172e)
-    * Website homepage: [https://vms.drweb.com/scan_file/](https://vms.drweb.com/scan_file/)
+* Scan result: [install_pip.vbs - Ok](https://online273.drweb.com/cache/?i=1ff451ce0a706304955efeb7364e172e)
+* Website homepage: [https://vms.drweb.com/scan_file/](https://vms.drweb.com/scan_file/)
 
 
 INTERNXT:
-    * Scan result: safe, all is done via cache, so no web results this time
-    * Website homepage: [https://internxt.com/virus-scanner](https://internxt.com/virus-scanner)
+* Scan result: safe, all is done via cache, so no web results this time
+* Website homepage: [https://internxt.com/virus-scanner](https://internxt.com/virus-scanner)
 
 <!-- I have hidden it, but I do not understand why it finds a false positive (and yes, I know that it says that it is a trojan [I have emailed-them to try and understand this detection]) -->
 <!-- Kaspersky:
-    * Scan result: [1 false positive](https://opentip.kaspersky.com/0F4BA2667684C461976E50D79D3DBE32248A1E1D8C5ACC3637C457FA00825F20/)
-    * Website homepage: [https://opentip.kaspersky.com/](https://opentip.kaspersky.com/) -->
+* Scan result: [1 false positive](https://opentip.kaspersky.com/0F4BA2667684C461976E50D79D3DBE32248A1E1D8C5ACC3637C457FA00825F20/)
+* Website homepage: [https://opentip.kaspersky.com/](https://opentip.kaspersky.com/) -->
 
 Jotti:
-    * Scan result: [Safe](https://virusscan.jotti.org/fr-FR/filescanjob/77l94etxxu)
-    * Website homepage: [https://virusscan.jotti.org/](https://virusscan.jotti.org/)
+* Scan result: [Safe](https://virusscan.jotti.org/fr-FR/filescanjob/77l94etxxu)
+* Website homepage: [https://virusscan.jotti.org/](https://virusscan.jotti.org/)
 
 <!-- I have hidden it, but I do not understand why it finds a false positive -->
 <!-- Opswat:
-    * Scan result: [1 false positive](https://metadefender.opswat.com/results/file/bzIyMDcxMVNMYXJIcnc0eWpNeG0yNEo5dXU/regular/overview)
-    * Website homepage: [https://metadefender.opswat.com/#!/](https://metadefender.opswat.com/#!/) -->
+* Scan result: [1 false positive](https://metadefender.opswat.com/results/file/bzIyMDcxMVNMYXJIcnc0eWpNeG0yNEo5dXU/regular/overview)
+* Website homepage: [https://metadefender.opswat.com/#!/](https://metadefender.opswat.com/#!/) -->
 
 <!-- I have hidden it because, the section Anti-Virus Scan Results for OPSWAT Metadefender does not provide the same results as the OPSWAT website itself -->
 <!-- Hybrid analysis:
-    * Scan result: [No threats](https://www.hybrid-analysis.com/sample/0f4ba2667684c461976e50d79d3dbe32248a1e1d8c5acc3637c457fa00825f20) (The threats it has flagged is just the python executable being downloaded [just look at the screenshots of the machines])
-    * Website homepage: [https://www.hybrid-analysis.com/](https://www.hybrid-analysis.com/) -->
+* Scan result: [No threats](https://www.hybrid-analysis.com/sample/0f4ba2667684c461976e50d79d3dbe32248a1e1d8c5acc3637c457fa00825f20) (The threats it has flagged is just the python executable being downloaded [just look at the screenshots of the machines])
+* Website homepage: [https://www.hybrid-analysis.com/](https://www.hybrid-analysis.com/) -->
 
 Virustotal:
-    * Scan result: [4 false positives](https://www.virustotal.com/gui/file/82c0943515defccead36eda4837819929ea64367c4e65521749935189de6320c) (The file has flagged viruses just because it downloads the python executable using 'YOUR' consent and all the links it follows are presented to you when it asks for your confirmation)
-    * Website homepage: [https://www.virustotal.com/gui/home/upload](https://www.virustotal.com/gui/home/upload)
+* Scan result: [4 false positives](https://www.virustotal.com/gui/file/82c0943515defccead36eda4837819929ea64367c4e65521749935189de6320c) (The file has flagged viruses just because it downloads the python executable using 'YOUR' consent and all the links it follows are presented to you when it asks for your confirmation)
+* Website homepage: [https://www.virustotal.com/gui/home/upload](https://www.virustotal.com/gui/home/upload)
