@@ -138,7 +138,7 @@ installation_verification_vars(1) = installer_homepage
 ```
 ### Declaring the functions
 These are the functions used in the program
-#### Download a file
+### Download a file
 ```vbs
 Function download_a_file(download_info)
     ' Download a file from the internet
@@ -170,7 +170,7 @@ Function download_a_file(download_info)
     bStrm.close
 End Function
 ```
-#### Run file
+### Run file
 ```vbs
 Function run_file(run_info)
     'Run a file as if it was in the terminal
@@ -194,7 +194,7 @@ Function run_file(run_info)
 
 End Function
 ```
-#### File exists
+### File exists
 ```vbs
 Function file_exists(file_path)
     'Check if the specified file exists
@@ -215,7 +215,7 @@ Function file_exists(file_path)
     End If
 End Function
 ```
-#### Open in browser
+### Open in browser
 ```vbs
 Function open_in_browser(url)
     'Open a link in the browser
@@ -223,7 +223,7 @@ Function open_in_browser(url)
     CreateObject("WScript.Shell").Run(url)
 End Function
 ```
-#### Get command response
+### Get command response
 ```vbs
 Function get_command_response(command)
     'Run a command and read the output on line 0
@@ -246,7 +246,7 @@ Function get_command_response(command)
     get_command_response=the_result
 End Function
 ```
-#### Get version
+### Get version
 ```vbs
 Function get_version(strInput)
     'Isolate the version from a string input
@@ -308,7 +308,7 @@ Function get_version(strInput)
 
 End Function
 ```
-#### Open installer page
+### Open installer page
 ```vbs
 Function open_installer_page(url)
     'Ask if user wishes to open the given url
@@ -337,7 +337,7 @@ Function open_installer_page(url)
     End If
 End Function
 ```
-#### Check installation
+### Check installation
 ```vbs
 Function check_installation(installation_verification_vars)
     'Check if the program has correctly been installed
@@ -384,8 +384,8 @@ End Function
 ```
 ### Code in the body of the program
 This is the section about the code that is not in functions and that is not a variable declaration.
-#### The questions
-##### vbCrLf
+### The questions
+### vbCrLf
 ```vbs
 vbCrLf
 Usage:
@@ -393,12 +393,12 @@ Usage:
 Description:
 Add a new line in a vbs message.
 ```
-##### Language
+### Language
 ```vbs
 'Ask for the preferred language and store it in the variable 'the_chosen_language'
 the_chosen_language = MsgBox("Do you wish to run this script in French", yes_no+question_icon+0, "Language")
 ```
-##### If choice = 'French'
+### If choice = 'French'
 ```vbs
 'Ask the user, what they wish to do (once that they have been informed that despite the antivirus potentially considering this script as a threat) that there is nothing to worry about.
 ' [The reason an antivirus might consider this script as a virus is due to people using this language in the past to create a malware (thus, the reason for this very long and line-per-line explanation of the program)]
@@ -409,7 +409,7 @@ warning_response = MsgBox("Ce program est configuré pour, si non présent, tél
 warning_response = MsgBox("Désirez-vous ouvrir la page de l'installeur ?"+vbCrLf+"Lien:"+vbCrLf+url, yes_no+question_icon+0, "Ouvrir le lien ?")
 ```
 
-##### If choice = 'English'
+### If choice = 'English'
 
 ```vbs
 'Ask the user, what they wish to do (once that they have been informed that despite the antivirus potentially considering this script as a threat) that there is nothing to worry about.
@@ -421,9 +421,9 @@ warning_response = MsgBox("This program is configured to download, if not presen
 warning_response = MsgBox("Do you wish to open the page of the installer?"+vbCrLf+"Link:"+vbCrLf+url, yes_no+question_icon+0, "Open the link?")
 
 ```
-#### The Condition blocks
+### The Condition blocks
 This part will cover the if statements contained in the main body of the file
-##### Inform of the chosen language
+### Inform of the chosen language
 ```vbs
 'If the content of the variable 'the_chosen_language' is equal to the content of the variable 'run_french'
 If the_chosen_language = run_french Then
@@ -440,9 +440,9 @@ ElseIf the_chosen_language = run_english Then
     to_nowhere = MsgBox("This program was created by "+the_author, 0+information_icon+0, "The Author of the program")
 End If
 ```
-##### Inform user that the program is not dangerous
+### Inform user that the program is not dangerous
 This is the information section and also the moment when you can chose to exit the program (if started twice for example)
-###### French
+### French
 ```vbs
 'If the content of the variable 'the_chosen_language' is equal to the content of the variable 'run_french'
 If the_chosen_language = run_french Then
@@ -475,7 +475,7 @@ If the_chosen_language = run_french Then
         continue_program = false
     End If
 ```
-###### English
+### English
 
 ```vbs
 'If the content of the variable 'the_chosen_language' is equal to the content of the variable 'run_english'
@@ -510,7 +510,7 @@ ElseIf the_chosen_language = run_english Then
     End If
 End If
 ```
-##### Attempt the installation
+### Attempt the installation
 ```vbs
 'If the file exists and the content of the variable 'continue_program' is true
 If file_exists(file_name) = true And continue_program = true Then
