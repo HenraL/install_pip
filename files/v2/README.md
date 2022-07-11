@@ -37,7 +37,7 @@
 
 ## About
 
-This program is a script written in `vbs` for `windows` to help users easily install the `pip` package for the `python` language.
+This program is a script written in `vbs` for `Windows` to help users easily install the `pip` package for the `Python` language.
 
 ## How to run
 
@@ -53,10 +53,10 @@ An internet connection is required during the installation process.
 ### Used libraries
 !! vbs is case insensitive when it comes to importing libraries or system function (ex: If), thus 'WScript.Shell' if the same as 'wscript.shell' !!
 Libraries:
-* "WinHttp.WinHttpRequest.5.1" : library used here to send a query on the internet
-* "Adodb.Stream" : library used here to write content to a file
-* "Scripting.FileSystemObject" : library used here to check if a file exists
-* "wscript.shell" : library used here to run a program, open a link
+* `WinHttp.WinHttpRequest.5.1` : library used here to send a query on the internet
+* `Adodb.Stream` : library used here to write content to a file
+* `Scripting.FileSystemObject` : library used here to check if a file exists
+* `wscript.shell` : library used here to run a program, open a link
 
 ### Used links
 Links:
