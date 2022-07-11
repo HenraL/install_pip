@@ -1,3 +1,4 @@
+'Encoding of the file: Windows1252
 'Declaring the majority of the variables that will be used
 Dim FSO
 Dim run_french
@@ -226,7 +227,7 @@ ElseIf the_chosen_language = run_english Then
 End If
 
 If the_chosen_language = run_french Then
-    warning_response = MsgBox("Ce program est configuré pour, si non présent, télécharger l'installateur de python."+vbCrLf+vbCrLf+"La raison de cette manipulation est dût à la présence du module pip dans l'installeur."+vbCrLf+vbCrLf+"Néanmoins, l'action de télécharger un fichier via ce type de programme et parfois considéré comme malveillant au yeux des antivirus."+vbCrLf+vbCrLf+"Si cela est le cas, il est possible de télécharger en amont l'exécutable, fenêtre suivante, pour passer directement à l'installation."+vbCrLf+vbCrLf+"Cela ne fais pas de ce program un programme malveillant."+vbCrLf+vbCrLf+"Si toutefois vous ne faites pas confiance à ce programme, répondez 'non' pour avoir les étapes à suivre pour installer pip sur votre ordinateur, ce sont les étapes que fais le programme."+vbCrLf+vbCrLf+"Merci de votre compréhension ;-)"+vbCrLf+vbCrLf+"Oui -> Fenêtre suivante"+vbCrLf+"Non -> Etapes que suis le programme"+vbCrLf+"Annuler -> quitter le programme", yes_no_cancel+warning_icon+on_foreground, "A lire attentivement !")'+blanks)
+    warning_response = MsgBox("Ce program est configuré pour, si non présent, télécharger l'installateur de python."+vbCrLf+vbCrLf+"La raison de cette manipulation est dût à la présence du module pip dans l'installeur."+vbCrLf+vbCrLf+"Néanmoins, l'action de télécharger un fichier via ce type de programme et parfois considéré comme malveillant au yeux des antivirus."+vbCrLf+vbCrLf+"Si cela est le cas, il est possible de télécharger en amont l'exécutable, fenêtre suivante, pour passer directement à l'installation."+vbCrLf+vbCrLf+"Cela ne fais pas de ce program un programme malveillant."+vbCrLf+vbCrLf+"Si toutefois vous ne faites pas confiance à ce programme, répondez 'non' pour avoir les étapes à suivre pour installer pip sur votre ordinateur, ce sont les étapes que fais le programme."+vbCrLf+vbCrLf+"Merci de votre compréhension ;-)"+vbCrLf+vbCrLf+"Oui -> Fenêtre suivante"+vbCrLf+"Non -> Etapes que suis le programme"+vbCrLf+"Annuler -> quitter le programme", yes_no_cancel+warning_icon+on_foreground, "A lire attentivement !")
     If warning_response = answer_yes Then
         warning_response = MsgBox("Désirez-vous ouvrir la page de l'installeur ?"+vbCrLf+"Lien:"+vbCrLf+url, yes_no+question_icon+0, "Ouvrir le lien ?")
         If warning_response = answer_yes Then
@@ -235,7 +236,7 @@ If the_chosen_language = run_french Then
         End If
 
     ElseIf warning_response = answer_no Then
-        to_nowhere = MsgBox("Les étapes que fait le program:"+vbCrLf+"1. Demander la langue désiré"+vbCrLf+"2. Afficher ce message"+vbCrLf+"3. Vérifier si l'exécutable est présent"+vbCrLf+"3.1 Si l'executable n'est pas présent, tenter de le télécharger"+vbCrLf+"3.2 Si 3.1 a été exécuté, vérifier que l'exécutable est présent"+vbCrLf+"4. Lancer l'exécutable avec les arguments '/passive' et 'Include_pip=1'"+vbCrLf+"4.1 L'argument '/passive' permet d'afficher la progression de l'installation"+vbCrLf+"4.2 L'argument 'Include_pip=1' permet de cocher la case 'installer pip', présente quand on passe par les options avancés de la fenêtre d'installation", 0+information_icon+on_foreground, "Les étapes que suit le programme")
+        to_nowhere = MsgBox("Les étapes que fait le program:"+vbCrLf+"1. Demander la langue désirée"+vbCrLf+"2. Afficher ce message"+vbCrLf+"3. Vérifier si l'exécutable est présent"+vbCrLf+"3.1 Si l'executable n'est pas présent, tenter de le télécharger"+vbCrLf+"3.2 Si 3.1 a été exécuté, vérifier que l'exécutable est présent"+vbCrLf+"4. Lancer l'exécutable avec les arguments '/passive' et 'Include_pip=1'"+vbCrLf+"4.1 L'argument '/passive' permet d'afficher la progression de l'installation"+vbCrLf+"4.2 L'argument 'Include_pip=1' permet de cocher la case 'installer pip', présente quand on passe par les options avancées de la fenêtre d'installation", 0+information_icon+on_foreground, "Les étapes que suit le programme")
         to_nowhere = MsgBox("Ce program va maintenant se fermer."+vbCrLf+"Au revoir et à une prochaine fois :-)", 0+information_icon+on_foreground, "Au revoir")
         continue_program = false
 
@@ -245,7 +246,7 @@ If the_chosen_language = run_french Then
     End If
 
 ElseIf the_chosen_language = run_english Then
-    warning_response = MsgBox("This program is configured to download, if not present, the python installer."+vbCrLf+vbCrLf+"The reason of the download is because the python installer also has the ability to install pip."+vbCrLf+vbCrLf+"Nethertheless, the simple action of downloading a file using this langage is sometimes considered as malignant by an antivirus."+vbCrLf+vbCrLf+"If this is the case, it is possible to download the executable, next window, to automatically skip to the installation part."+vbCrLf+vbCrLf+"Nethertheless, this does not make this program a malware."+vbCrLf+vbCrLf+"However, if you do not trust this program, click the 'no' box to display the steps to follow to install pip on your computer, these are the exact steps that are done by the program."+vbCrLf+vbCrLf+"Thank you for your comprehension ;-)"+vbCrLf+vbCrLf+"Yes -> Next window"+vbCrLf+"No -> Steps to follow for the installation"+vbCrLf+"Cancel -> Quit the program", yes_no_cancel+warning_icon+on_foreground, "To be read carefully !")'+blanks)
+    warning_response = MsgBox("This program is configured to download, if not present, the python installer."+vbCrLf+vbCrLf+"The reason of the download is because the python installer also has the ability to install pip."+vbCrLf+vbCrLf+"Nethertheless, the simple action of downloading a file using this langage is sometimes considered as malignant by an antivirus."+vbCrLf+vbCrLf+"If this is the case, it is possible to download the executable, next window, to automatically skip to the installation part."+vbCrLf+vbCrLf+"Nethertheless, this does not make this program a malware."+vbCrLf+vbCrLf+"However, if you do not trust this program, click the 'no' box to display the steps to follow to install pip on your computer, these are the exact steps that are done by the program."+vbCrLf+vbCrLf+"Thank you for your comprehension ;-)"+vbCrLf+vbCrLf+"Yes -> Next window"+vbCrLf+"No -> Steps to follow for the installation"+vbCrLf+"Cancel -> Quit the program", yes_no_cancel+warning_icon+on_foreground, "To be read carefully !")
     If warning_response = answer_yes Then
         warning_response = MsgBox("Do you wish to open the page of the installer?"+vbCrLf+"Link:"+vbCrLf+url, yes_no+question_icon+0, "Open the link?")
         If warning_response = answer_yes Then
@@ -276,10 +277,10 @@ ElseIf continue_program = true Then
         check_installation(installation_verification_vars)
     Else
     
-        If the_chosen_language = French Then
+        If the_chosen_language = run_french Then
             to_nowhere = MsgBox("Échec du téléchargement d'un fichier nécessaire pour le bon fonctionnement du programme !"+vbCrLf+"Merci de télécharger l'executable se trouvant à cette adresse:"+vbCrLf+url+vbCrLf+"et de le mettre dans le même dossier que ce programme"+vbCrLf+"Ensuite, merci d'exécuter de programme à nouveau", 0+warning_icon+on_foreground, "Échec du téléchargement !")
             open_installer_page(url)
-        ElseIf the_chosen_language = English Then
+        ElseIf the_chosen_language = run_english Then
             to_nowhere = MsgBox("Failed to download the required file !"+vbCrLf+"Please download the required executable at:"+vbCrLf+url+vbCrLf+"And put it in the same folder as this program"+vbCrLf+"Then run this program again.", 0+warning_icon+on_foreground, "Download failed!")
             open_installer_page(url)
         End If
